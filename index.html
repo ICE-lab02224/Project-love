@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กดปุ่ม Yes หน่อย 😆</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffecec;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        #questionContainer {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            position: absolute;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        #noBtn {
+            background-color: red;
+            color: white;
+            left: 50px;
+            top: 50px;
+        }
+        #yesBtn {
+            background-color: green;
+            color: white;
+            right: 50px;
+            top: 50px;
+        }
+        #resultContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ลินรักลิดไหมมมมมม? ❤️</h2>
+    <div id="questionContainer">
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+
+    <div id="resultContainer">
+        <h2>เย้! 🎉</h2>
+        <img id="gifResult" src="https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif" width="200">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
